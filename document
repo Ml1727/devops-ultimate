@@ -1,0 +1,97 @@
+ DevOps End-to-End CI/CD Project with Jenkins, Docker & Kubernetes
+
+This project demonstrates a complete **CI/CD pipeline** using Jenkins, Docker, DockerHub, and Kubernetes deployed on AWS EC2 instances.
+
+---
+
+## 📌 Project Architecture
+
+GitHub → Jenkins → Docker Build → DockerHub → Kubernetes Deployment → Application Live
+
+---
+
+## 🧰 Technologies Used
+
+- Linux (Ubuntu)
+- Jenkins (CI/CD Automation)
+- Docker (Containerization)
+- DockerHub (Image Registry)
+- Kubernetes (k3s) for orchestration
+- AWS EC2 (Cloud Infrastructure)
+- Git & GitHub (Version Control)
+
+---
+
+## 🚀 Features
+
+- Automated CI/CD pipeline using Jenkins
+- Docker image build and push to DockerHub
+- Kubernetes deployment using YAML manifests
+- Exposed application using NodePort service
+- Scalable deployment with replicas
+
+---
+
+## 🏗 Project Structure
+
+
+devops-ultimate/
+│
+├── app/
+│ ├── app.py
+│ └── requirements.txt
+│
+├── terraform/
+│ └── monitoring/
+│ ├── Dockerfile
+│ ├── Jenkinsfile
+│ └── service.yaml
+│
+├── kubernetes/
+│ ├── deployment.yaml
+│ └── service.yaml
+│
+└── README.md
+
+
+---
+
+## ⚙️ CI/CD Pipeline Steps
+
+1. Developer pushes code to GitHub
+2. Jenkins detects changes
+3. Jenkins builds Docker image
+4. Image pushed to DockerHub
+5. Kubernetes pulls image
+6. Application deployed on EC2 cluster
+
+---
+
+## 🌐 Application Access
+
+
+http://<EC2-PUBLIC-IP>:30007
+
+
+---
+
+## 📸 Screenshots
+
+(Add Jenkins pipeline, DockerHub image, and Kubernetes pods screenshots here)
+
+---
+
+## 🎯 Learning Outcome
+
+- CI/CD pipeline automation
+- Containerization with Docker
+- Kubernetes deployment basics
+- AWS cloud infrastructure usage
+- Real-world DevOps workflow
+
+---
+
+## 👨‍💻 Author
+
+Madhulatha  
+DevOps Engineer (Aspiring)
